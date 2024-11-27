@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+      
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form>
+      
+            <div class="row">
+                <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+           
+            <div class="row">
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+
+    
+            <div class="form-group gender">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+   
+            <div class="form-group hobbies">
+                <label>Hobbies:</label>
+                <input type="checkbox" id="music" name="hobbies" value="Music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="movies" name="hobbies" value="Movies">
+                <label for="movies">Movies</label>
+            </div>
+
+ 
+            <div class="row">
+                <div class="form-group">
+                    <label for="source-income">Source of Income:</label>
+                    <select id="source-income">
+                        <option value="Employed">Employed</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="income">Income:</label>
+                    <input type="range" id="income" min="0" max="100" value="20">
+                    <span id="income-value">20K</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" value="18" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture">
+                </div>
+            </div>
+
+  
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" placeholder="Enter your bio"></textarea>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit" class="create-btn">Create</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
